@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Agent Decoder // TDS Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Agent Decoder <span><a href="https://www.youtube.com/watch?v=mN0zPOpADL4">327</a></span></h1>
+    <p class="subtitle">Enter the 3 Agent IDs assigned to you to retrieve their credentials.</p>
+    
+
+    <div class="input-group">
+        <div class="input-wrapper">
+            <label>Agent ID 1</label>
+            <input type="text" id="agent1" placeholder="e.g. 003" maxlength="3">
+        </div>
+        <div class="input-wrapper">
+            <label>Agent ID 2</label>
+            <input type="text" id="agent2" placeholder="e.g. 037" maxlength="3">
+        </div>
+        <div class="input-wrapper">
+            <label>Agent ID 3</label>
+            <input type="text" id="agent3" placeholder="e.g. 029" maxlength="3">
+        </div>
+    </div>
+
+    <button id="generate-btn">Decrypt Identities</button>
+    <div id="status" class="status"></div>
+
+    <div class="output-area" id="output-area">
+        <button class="copy-btn" id="copy-btn">
+            <span id="copy-icon">📋</span> <span id="copy-text">Copy JSON</span>
+        </button>
+        <pre id="json-output"></pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
